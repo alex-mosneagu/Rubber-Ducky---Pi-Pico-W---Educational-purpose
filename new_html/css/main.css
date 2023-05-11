@@ -1,0 +1,116 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1F1F1F;
+}
+
+aside {
+  width: 280px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #1A1A1A;
+}
+aside .logo {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+aside .logo span {
+  color: #FD6844;
+}
+aside .menu .item {
+  margin-bottom: 5px;
+}
+aside .menu .item a {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.1s ease-out;
+}
+aside .menu .item:hover a {
+  background-color: #FD6844;
+}
+aside .menu .item.active a {
+  background-color: #FD6844;
+}
+
+main {
+  width: calc(100% - 440px);
+  margin-left: 380px;
+}
+main header {
+  padding: 40px 0px;
+  margin-bottom: 3vh;
+}
+main header h1 {
+  color: white;
+  margin: 0;
+}
+main header h3 {
+  margin: 0;
+  color: white;
+  font-weight: 300;
+}
+main .homepage {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 4px;
+}
+main .homepage .grid {
+  display: flex;
+  align-items: flex-start;
+}
+main .homepage .grid .col {
+  width: 50%;
+}
+main .homepage form .form-element label {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+main .homepage form .form-element textarea {
+  width: calc(100% - 60px);
+  height: 440px;
+  background-color: #1F1F1F;
+  color: white;
+  padding: 10px;
+}
+main .homepage form input[type=submit] {
+  height: 40px;
+  min-width: 240px;
+  border: 0px;
+  color: white;
+  margin-top: 20px;
+  background-color: #FD6844;
+  border-radius: 6px;
+  cursor: pointer;
+}
+main .homepage p {
+  color: white;
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+}
+main .homepage .example {
+  background-color: #1F1F1F;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 440px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+main .homepage .example pre {
+  color: white;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin: 0px;
+  font-size: 15px;
+}/*# sourceMappingURL=main.css.map */

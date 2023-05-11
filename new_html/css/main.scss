@@ -1,0 +1,134 @@
+$background: #1F1F1F;
+$black: #1A1A1A;
+$orange: #FD6844;
+$card: #242731;
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+}
+
+aside{
+    width: 280px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $black;
+    .logo{
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: white;
+        span{
+            color: $orange;
+        }   
+    }
+    .menu{
+        .item{
+            margin-bottom: 5px;
+            a{
+                display: block;
+                padding: 10px;
+                border-radius: 4px;
+                text-decoration: none;
+                color: white;
+                transition: all .1s ease-out;
+            }
+            &:hover{
+                a{
+                    background-color: $orange;
+                }
+            }
+            &.active{
+                a{
+                    background-color: $orange;
+                }
+            }
+        }
+    }
+}
+
+main{
+    width: calc(100% - 440px);
+    margin-left: 380px;
+
+    header{
+        padding: 40px 0px;
+        margin-bottom: 3vh;
+        h1{
+            color: white;
+            margin: 0;
+        }
+        h3{
+            margin: 0;
+            color: white;
+            font-weight: 300;
+        }
+    }
+
+    .homepage{
+        background-color: $black;
+        padding: 20px;
+        border-radius: 4px;
+        .grid{
+            display: flex;
+            align-items: flex-start;
+            .col{
+                width: 50%;
+            }
+        }
+
+        form{
+            .form-element{
+                label{
+                    color: white;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                textarea{
+                    width: calc(100% - 60px);
+                    height: 440px;
+                    background-color: $background;
+                    color: white;
+                    padding: 10px;
+                }
+            }
+            input[type=submit]{
+                height: 40px;
+                min-width: 240px;
+                border: 0px;
+                color: white;
+                margin-top: 20px;
+                background-color: $orange;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+        p{
+            color: white;
+            display: block;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .example{
+            background-color: $background;
+            border: 1px solid rgba($color: #fff, $alpha: .3);
+            height: 440px;
+            padding: 10px;
+            overflow-y: scroll;
+            pre{
+                color: white;
+                word-wrap: break-word; 
+                white-space: pre-wrap;
+                margin: 0px;
+                font-size: 15px;
+            }
+        }
+    }
+}
